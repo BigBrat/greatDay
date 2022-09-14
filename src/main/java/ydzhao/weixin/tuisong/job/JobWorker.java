@@ -15,8 +15,8 @@ public class JobWorker {
     //要推送的用户openid，多个用,分格
     private static String openId = "oAKKs59OhmLd_3Hwp4AxF-t_B_hY,oAKKs5x_TYvG7MyKnkvy8uAlq7ug";
 
-    @Scheduled(cron = "0 30 7 * * ?")
-//    @Scheduled(cron = "0 39 23 * * ?")
+//    @Scheduled(cron = "0 30 7 * * ?")
+    @Scheduled(cron = "0 56 14 * * ?")
     public void goodMorning(){
         Pusher.push(openId);
     }
